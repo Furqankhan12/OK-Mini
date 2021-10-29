@@ -5,13 +5,49 @@ function myFunction()
 
   let value = parseInt(document.getElementById("value").value);
   if (value != NaN) {
-    document.getElementById("buyAmount1").innerText = (value * (0.6 / 100)).toFixed(3);
-    let step2 = document.getElementById("buyAmount2").innerText = (value * (1.2 / 100)).toFixed(3);
-    let step3 = document.getElementById("buyAmount3").innerText = (value * (2.6 / 100)).toFixed(3);
-    let step4 = document.getElementById("buyAmount4").innerText = (value * (5.6 / 100)).toFixed(3);
-    let step5 = document.getElementById("buyAmount5").innerText = (value * (12 / 100)).toFixed(3);
-    let step6 = document.getElementById("buyAmount6").innerText = (value * (25 / 100)).toFixed(3);
-    let step7 = document.getElementById("buyAmount7").innerText = (value * (53 / 100)).toFixed(3);
+
+    let step1 =  (value * (0.6 / 100)).toFixed(3)
+    let step2 = (value * (1.2 / 100)).toFixed(3)
+    let step3 = (value * (2.6 / 100)).toFixed(3);
+    let step4 = (value * (5.6 / 100)).toFixed(3);
+    let step5 =  (value * (12 / 100)).toFixed(3);
+    let step6 = (value * (25 / 100)).toFixed(3);
+    let step7 = (value * (53 / 100)).toFixed(3);
+
+    let winAmount1 = (step1*1.95).toFixed(3);
+    let winAmount2 = (step2 * 1.95).toFixed(3)
+    let winAmount3 = (step3 * 1.95).toFixed(3)
+    let winAmount4 = (step4 * 1.95).toFixed(3)
+    let winAmount5 = (step5 * 1.95).toFixed(3)
+    let winAmount6 = (step6 * 1.95).toFixed(3)
+    let winAmount7 = (step7 * 1.95).toFixed(3)
+
+    document.getElementById("buyAmount1").innerText = step1;
+    document.getElementById("buyAmount2").innerText = step2;
+    document.getElementById("buyAmount3").innerText = step3;
+    document.getElementById("buyAmount4").innerText = step4;
+    document.getElementById("buyAmount5").innerText = step5;
+    document.getElementById("buyAmount6").innerText = step6;
+    document.getElementById("buyAmount7").innerText = step7;
+
+    document.getElementById("winAmount1").innerText =  winAmount1;  
+     document.getElementById("winAmount2").innerText = winAmount2;
+    document.getElementById("winAmount3").innerText = winAmount3;
+    document.getElementById("winAmount4").innerText = winAmount4;
+    document.getElementById("winAmount5").innerText = winAmount5;
+    document.getElementById("winAmount6").innerText = winAmount6;
+    document.getElementById("winAmount7").innerText = winAmount7;
+
+    document.getElementById("netProfit1").innerText = (winAmount1 - step1).toFixed(3);
+    document.getElementById("netProfit2").innerText = (winAmount2 - step2).toFixed(3);
+    document.getElementById("netProfit3").innerText = (winAmount3 - step3).toFixed(3);
+    document.getElementById("netProfit4").innerText = (winAmount4 - step4).toFixed(3);
+    document.getElementById("netProfit5").innerText = (winAmount5 - step5).toFixed(3);
+    document.getElementById("netProfit6").innerText = (winAmount6 - step6).toFixed(3);
+    document.getElementById("netProfit7").innerText = (winAmount7 - step7).toFixed(3);
+
+
+
   }
 }
 
