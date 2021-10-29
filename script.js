@@ -22,6 +22,8 @@ function myFunction()
     let winAmount6 = (step6 * 1.95).toFixed(3)
     let winAmount7 = (step7 * 1.95).toFixed(3)
 
+    
+
     document.getElementById("buyAmount1").innerText = step1;
     document.getElementById("buyAmount2").innerText = step2;
     document.getElementById("buyAmount3").innerText = step3;
@@ -39,12 +41,16 @@ function myFunction()
     document.getElementById("winAmount7").innerText = winAmount7;
 
     document.getElementById("netProfit1").innerText = (winAmount1 - step1).toFixed(3);
-    document.getElementById("netProfit2").innerText = (winAmount2 - step2).toFixed(3);
-    document.getElementById("netProfit3").innerText = (winAmount3 - step3).toFixed(3);
-    document.getElementById("netProfit4").innerText = (winAmount4 - step4).toFixed(3);
-    document.getElementById("netProfit5").innerText = (winAmount5 - step5).toFixed(3);
-    document.getElementById("netProfit6").innerText = (winAmount6 - step6).toFixed(3);
-    document.getElementById("netProfit7").innerText = (winAmount7 - step7).toFixed(3);
+    document.getElementById("netProfit2").innerText = (parseFloat(winAmount2)-(parseFloat(step1)+parseFloat(step2))).toFixed(3);
+    document.getElementById("netProfit3").innerText = (parseFloat(winAmount3)-(parseFloat(step1)+parseFloat(step2)+parseFloat(step3))).toFixed(3);
+
+    document.getElementById("netProfit4").innerText = (parseFloat(winAmount4)-(parseFloat(step1)+parseFloat(step2)+parseFloat(step3)+parseFloat(step4))).toFixed(3);
+
+    document.getElementById("netProfit5").innerText = (parseFloat(winAmount5)-(parseFloat(step1)+parseFloat(step2)+parseFloat(step3)+parseFloat(step4)+parseFloat(step5))).toFixed(3);
+
+    document.getElementById("netProfit6").innerText = (parseFloat(winAmount6)-(parseFloat(step1)+parseFloat(step2)+parseFloat(step3)+parseFloat(step4)+parseFloat(step5)+parseFloat(step6))).toFixed(3);
+    
+    document.getElementById("netProfit7").innerText = (parseFloat(winAmount7)-(parseFloat(step1)+parseFloat(step2)+parseFloat(step3)+parseFloat(step4)+parseFloat(step5)+parseFloat(step6)+parseFloat(step7))).toFixed(3);
 
 
 
