@@ -1,1 +1,104 @@
-/* From https://css.glass */
+body {
+    background-color: #E3E3E3;
+}
+
+._glass-morphisim {
+    /* From https://css.glass */
+    background-color: transparent;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+._card {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.table {
+    border-color: #0E0E0E !important;
+}
+
+.text-transform-capitalize {
+    text-transform: capitalize;
+}
+
+.form-control {
+    background-color: #E3E3E3 !important;
+    border-color: #0E0E0E !important;
+}
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: red; */
+}
+
+.box {
+    position: relative;
+}
+
+.shape-1 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #9918CB;
+    opacity: 0.4;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    left: -40px;
+    top: 20px;
+
+}
+
+.shape-2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #F22777;
+    opacity: 0.8;
+    z-index: -1;
+    display: flex;
+    flex: 0 0 1;
+    bottom: -10px;
+    right: -20px;
+}
+
+/* .shape-3 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #D9BD16;
+
+    z-index: -1;
+    display: flex;
+    flex: 0 0 1;
+    bottom: 50%;
+    right: 50%;
+} */
+
+@media only screen and (max-width: 600px) {
+
+    ._glass-morphisim {
+
+        border: 0px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0px 0px rgb(0 0 0 / 10%)
+    }
+    .shape-1,.shape-2,.shape-3
+    {
+        display:none;
+    }
+}

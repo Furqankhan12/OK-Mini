@@ -13,116 +13,94 @@
         <title>Ok-MINI Steps</title>
         <style>
 
-        ._glass-morphisim {
-            /* From https://css.glass */
-            background-color: transparent;
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        ._card {
-            background: rgba(255, 255, 255, 0.25);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.18);
-        }
-        .table
-        {
-            border-color: #DEDEDE !important;
-        }
-        .text-transform-capitalize
-        {
-             text-transform: capitalize;
-        }
-        @media only screen and (max-width: 600px) {
-            
-            ._glass-morphisim
-            {
-                
-                border: 0px solid rgba(255, 255, 255, 0.3);
-                box-shadow: 0 0px 0px rgb(0 0 0 / 10%)
-            }
-        }
+           
         </style>
     </head>
     <body>
-        <div class="_glass-morphisim p-4 container mt-5 col-md-4">
-            <div class=" center">
-                <div class="input-group mb-3">
-                    <input
-                        id="value"
-                        type="number"
-                        class="form-control"
-                        placeholder="USDT"
-                        aria-label="Recipient's username"
-                        aria-describedby="button-addon2"
-                    >
-                    <button
-                        class="btn btn-outline-secondary"
-                        type="button"
-                        id="button-addon2"
-                        onclick="myFunction()"
-                    >GET PLAN</button>
+        <div class="center">
+            <div class="box col-md-4" >
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+                <div class="shape-3"></div>
+
+                <div class="_glass-morphisim p-4 mt-5">
+                    <div class="input-group mb-3">
+                        <input
+                            id="value"
+                            type="number"
+                            class="form-control"
+                            placeholder="USDT"
+                            aria-label="Recipient's username"
+                            aria-describedby="button-addon2"
+                        >
+                        <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            id="button-addon2"
+                            onclick="myFunction()"
+                        >GET PLAN</button>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="text-transform-capitalize" scope="col">issues</th>
+                                <th class="text-transform-capitalize" scope="col">buy amount</th>
+                                <th class="text-transform-capitalize" scope="col">win amount</th>
+                                <th class="text-transform-capitalize" scope="col">net profit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Step 1</th>
+                                <td id="buyAmount1"></td>
+                                <td id="winAmount1"></td>
+                                <td id="netProfit1"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Step 2</th>
+                                <td id="buyAmount2"></td>
+                                <td id="winAmount2"></td>
+                                <td id="netProfit2"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Step 3</th>
+                                <td id="buyAmount3"></td>
+                                <td id="winAmount3"></td>
+                                <td id="netProfit3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Step 4</th>
+                                <td id="buyAmount4"></td>
+                                <td id="winAmount4"></td>
+                                <td id="netProfit4"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Step 5</th>
+                                <td id="buyAmount5"></td>
+                                <td id="winAmount5"></td>
+                                <td id="netProfit5"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Step 6</th>
+                                <td id="buyAmount6"></td>
+                                <td id="winAmount6"></td>
+                                <td id="netProfit6"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Step 7</th>
+                                <td id="buyAmount7"></td>
+                                <td id="winAmount7"></td>
+                                <td id="netProfit7"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th class="text-transform-capitalize" scope="col">issues</th>
-                            <th class="text-transform-capitalize" scope="col">buy amount</th>
-                            <th class="text-transform-capitalize" scope="col">win amount</th>
-                            <th class="text-transform-capitalize" scope="col">net profit</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Step 1</th>
-                            <td id="buyAmount1"></td>
-                            <td id="winAmount1"></td>
-                            <td id="netProfit1"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Step 2</th>
-                            <td id="buyAmount2"></td>
-                            <td id="winAmount2"></td>
-                            <td id="netProfit2"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Step 3</th>
-                            <td id="buyAmount3"></td>
-                            <td id="winAmount3"></td>
-                            <td id="netProfit3"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Step 4</th>
-                            <td id="buyAmount4"></td>
-                            <td id="winAmount4"></td>
-                            <td id="netProfit4"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Step 5</th>
-                            <td id="buyAmount5"></td>
-                            <td id="winAmount5"></td>
-                            <td id="netProfit5"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Step 6</th>
-                            <td id="buyAmount6"></td>
-                            <td id="winAmount6"></td>
-                            <td id="netProfit6"></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Step 7</th>
-                            <td id="buyAmount7"></td>
-                            <td id="winAmount7"></td>
-                            <td id="netProfit7"></td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
+
+          
+        
+
+
         </div>
         <script type="text/javascript" src="./script.js"></script>
     </body>
