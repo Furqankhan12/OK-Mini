@@ -6,13 +6,13 @@ function myFunction()
   let value = parseInt(document.getElementById("value").value);
   if (value != NaN) {
 
-    let step1 =  (value * (0.6 / 100)).toFixed(2)
-    let step2 = (value * (1.2 / 100)).toFixed(2)
-    let step3 = (value * (2.6 / 100)).toFixed(2);
-    let step4 = (value * (5.6 / 100)).toFixed(2);
-    let step5 =  (value * (12 / 100)).toFixed(2);
-    let step6 = (value * (25 / 100)).toFixed(2);
-    let step7 = (value * (53 / 100)).toFixed(2);
+    let step1 =  parseFloat((value * (0.6 / 100)).toFixed(2));
+    let step2 = parseFloat((value * (1.2 / 100)).toFixed(2));
+    let step3 = parseFloat((value * (2.6 / 100)).toFixed(2));
+    let step4 = parseFloat((value * (5.6 / 100)).toFixed(2));
+    let step5 =  parseFloat((value * (12 / 100)).toFixed(2));
+    let step6 = parseFloat((value * (25 / 100)).toFixed(2));
+    let step7 = parseFloat((value * (53 / 100)).toFixed(2));
 
     let winAmount1 = (step1*1.95).toFixed(2);
     let winAmount2 = (step2 * 1.95).toFixed(2)
