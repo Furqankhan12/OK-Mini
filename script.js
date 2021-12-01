@@ -15,12 +15,12 @@ function myFunction()
     let step7 = parseFloat((value * (53 / 100)).toFixed(2));
 
     let winAmount1 = (step1*1.95).toFixed(2);
-    let winAmount2 = (step2 * 1.95).toFixed(2)
-    let winAmount3 = (step3 * 1.95).toFixed(2)
-    let winAmount4 = (step4 * 1.95).toFixed(2)
-    let winAmount5 = (step5 * 1.95).toFixed(2)
-    let winAmount6 = (step6 * 1.95).toFixed(2)
-    let winAmount7 = (step7 * 1.95).toFixed(2)
+    let winAmount2 = (step2 * 1.95).toFixed(2);
+    let winAmount3 = (step3 * 1.95).toFixed(2);
+    let winAmount4 = (step4 * 1.95).toFixed(2);
+    let winAmount5 = (step5 * 1.95).toFixed(2);
+    let winAmount6 = (step6 * 1.95).toFixed(2);
+    let winAmount7 = (step7 * 1.95).toFixed(2);
 
     
 
