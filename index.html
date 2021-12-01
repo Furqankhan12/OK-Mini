@@ -15,7 +15,7 @@
 
         ._glass-morphisim {
             /* From https://css.glass */
-            background: rgba(255, 255, 255, 0.2);
+            background-color: transparent;
             border-radius: 16px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(5px);
@@ -37,6 +37,15 @@
         .text-transform-capitalize
         {
              text-transform: capitalize;
+        }
+        @media only screen and (max-width: 600px) {
+            
+            ._glass-morphisim
+            {
+                
+                border: 0px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0 0px 0px rgb(0 0 0 / 10%)
+            }
         }
         </style>
     </head>
